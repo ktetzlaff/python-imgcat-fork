@@ -78,6 +78,7 @@ Notes
 
 * [tmux 2.5+ cannot display big images][tmux_gh1502]. Use tmux <= 2.4 or run outside tmux.
 * In [tmux 3.3a or higher][tmux_33a], it is required to have `set-option -g allow-passthrough on` in `~/.tmux.conf`.
+* In [tmux 3.6 or higher][tmux_36_ibs], increasing the `input-buffer-size` above the default of 1048576 bytes (1 MiB) allows displaying larger images (e.g. `set-option -gq input-buffer-size 4194304` in `~/.tmux.conf`).
 * TODO: General platform/emulator support (introduce multiple backends) including Sixel
 
 
@@ -93,6 +94,7 @@ Related Projects
 [iTerm2_imgcat]: https://github.com/gnachman/iTerm2/blob/master/tests/imgcat
 [tmux_gh1502]: https://github.com/tmux/tmux/issues/1502
 [tmux_33a]: https://github.com/tmux/tmux/blob/3.3a/CHANGES#L30
+[tmux_36_ibs]: https://github.com/tmux/tmux/blob/3.6/CHANGES#L140
 [iterm_g3898]: https://gitlab.com/gnachman/iterm2/issues/3898
 
 
